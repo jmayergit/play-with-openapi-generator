@@ -38,6 +38,7 @@ paths:
               schema:
                 type: object
                 properties:
-                  token: string
+                  token:
+                    type: string
         '401':
           description: unauthorized
