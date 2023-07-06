@@ -9,6 +9,7 @@ My steps (YMMV)
 2. `wget https://repo1.maven.org/maven2/org/openapitools/openapi-generator-cli/6.6.0/openapi-generator-cli-6.6.0.jar -O openapi-generator-cli.jar`
 
 Java Runtime with asdf
+
 0. (optional) install asdf (not that simple but worth it)
 1. asdf install java adoptopenjdk-11.0.16+8
 2. asdf local java adoptopenjdk-11.0.16+8  
