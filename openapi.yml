@@ -1,0 +1,43 @@
+openapi: 3.0.0
+servers:
+  - url: http://localhost:3001
+info:
+  description: >-
+    Auth stuff
+  version: 1.0.0
+  title: OpenAPI Auth stuff
+tags:
+  - name: user
+    description: Operations about user
+paths:
+  /user/login:
+    get:
+      tags:
+        - user
+      summary: Logs user into the system
+      description: ''
+      operationId: loginUser
+      parameters:
+        - name: email
+          in: query
+          description: The email for login
+          required: true
+          schema:
+            type: string
+        - name: password
+          in: query
+          description: The password for login in clear text
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  token: string
+        '401':
+          description: unauthorized

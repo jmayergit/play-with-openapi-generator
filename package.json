@@ -1,0 +1,11 @@
+{
+  "name": "play-with-openapi-generator",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "generate": "openapi-generator-cli generate -g ruby-on-rails -i openapi.yml"
+  },
+  "devDependencies": {
+    "@openapitools/openapi-generator-cli": "^2.6.0"
+  }
+}
